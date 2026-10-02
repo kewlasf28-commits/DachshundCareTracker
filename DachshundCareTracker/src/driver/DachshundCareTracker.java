@@ -23,8 +23,7 @@ public class DachshundCareTracker {
         int exerciseMinutes;
         int waterCups;
 
-        System.out.println("Dachshund Daily Care Tracker");
-        System.out.println("----------------------------");
+        displayTitle();
 
         System.out.print("Enter your dachshund's name: ");
         dogName = input.nextLine();
@@ -46,7 +45,14 @@ public class DachshundCareTracker {
         System.out.println("Water: " + waterCups + " cups");
 
         input.close();
+    } //closes main
+
+        // Displays the program title
+        // no parameters -> void
+        public static void displayTitle() {
+            System.out.println("Dachshund Daily Care Tracker");
+            System.out.println("----------------------------");
+        }
     }
-}
 
 
