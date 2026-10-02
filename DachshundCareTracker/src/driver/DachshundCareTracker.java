@@ -8,6 +8,12 @@
  * care status.
  */
 
+// Question/struggle: How should I determine the daily care status
+// when the food, water, and exercise amounts are different?
+
+// Incremental design: I am building and testing one part of the program
+// at a time before adding the next feature.
+
 package driver;
 
 import java.util.Scanner;
@@ -25,7 +31,7 @@ public class DachshundCareTracker {
 
         displayTitle();
 
-        System.out.print("Enter your dachshund's name: ");
+            System.out.print("Enter your dachshund's name: ");
         dogName = input.nextLine();
 
         System.out.print("Enter amount of food eaten today (cups): ");
@@ -53,6 +59,13 @@ public class DachshundCareTracker {
             System.out.println("Dachshund Daily Care Tracker");
             System.out.println("----------------------------");
         }
+
+            // Will determine the dachshund's daily care status
+            // no parameters -> void
+            public static void calculateCareStatus() {
+                // Method will be completed in a later step.
+            }
     }
+
 
 
